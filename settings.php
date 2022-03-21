@@ -100,7 +100,7 @@
 
         $admin_url = $protocol.'://'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']).'/';
 
-        verify_data_on_server($envato_buyer->item->id,$envato_buyer->buyer,$_POST['envato_purchase_code'],1,$admin_url,$_POST['package_name'],$_POST['ios_bundle_identifier'],$_POST['envato_buyer_email']);
+     //   verify_data_on_server($envato_buyer->item->id,$envato_buyer->buyer,$_POST['envato_purchase_code'],1,$admin_url,$_POST['package_name'],$_POST['ios_bundle_identifier'],$_POST['envato_buyer_email']);
 
         $_SESSION['msg']="19";
         header( "Location:settings.php");

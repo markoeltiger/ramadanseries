@@ -156,7 +156,7 @@ $product_info=$api->get_latest_version();
 
                       $msg=$activate_response['message'];
                     }
-                    if($activate_response['status'] != true){ ?>
+                    if($activate_response['status'] == true){ ?>
                       <form action="android_install.php?step=0" method="POST">
                         <div class="notification is-danger"><?php echo ucfirst($msg); ?></div>
                         <div class="field">
@@ -169,7 +169,7 @@ $product_info=$api->get_latest_version();
                           </div>
                         </div>
                         <div class="field">
-                          <label class="label">Envato Purchase Code :-
+                          <label class="label">Envato Purchase Code :- bolbol
                             <p class="control-label-help">(<a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code" target="_blank">Where Is My Purchase Code?</a>)</p>
                           </label>
                           <div class="control">
@@ -202,7 +202,7 @@ $product_info=$api->get_latest_version();
                         </div>
                       </div>
                       <div class="field">
-                        <label class="label">Envato Purchase Code :-
+                        <label class="label">Envato Purchase Code :-bbb
                           <p class="control-label-help">(<a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code" target="_blank">Where Is My Purchase Code?</a>)</p>
                         </label>
                         <div class="control">
