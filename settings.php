@@ -64,7 +64,7 @@
     else if(isset($_POST['verify_purchase_submit']))
     {
 
-        $envato_buyer= verify_envato_purchase_code(trim($_POST['envato_purchase_code']));
+    //    $envato_buyer= verify_envato_purchase_code(trim($_POST['envato_purchase_code']));
 
         if($_POST['envato_buyer_name']!='' AND $envato_buyer->buyer==$_POST['envato_buyer_name'] AND $envato_buyer->item->id=='7506537')
         {

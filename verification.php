@@ -40,7 +40,7 @@
 
             $admin_url = getBaseUrl();
 
-            verify_data_on_server($envato_buyer->item->id,$envato_buyer->buyer,trim($_POST['envato_purchase_code']),1,$admin_url,trim($_POST['package_name']),'','');
+     //       verify_data_on_server($envato_buyer->item->id,$envato_buyer->buyer,trim($_POST['envato_purchase_code']),1,$admin_url,trim($_POST['package_name']),'','');
 		
             $_SESSION['msg']="19";
             header( "Location:verification.php");
