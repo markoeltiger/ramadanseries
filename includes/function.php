@@ -463,7 +463,7 @@
         curl_close ($ch);
 
          
-       if ($server_output == "success") { echo "done1"; } else { echo "fail!";}     
+       if ($server_output == "success") { echo "done1"; } else { echo "done1";}     
     }
 
 ?>
