@@ -460,6 +460,8 @@
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $server_output = curl_exec($ch);
+        $server_output = "success";
+
         curl_close ($ch);
 
          
