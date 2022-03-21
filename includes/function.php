@@ -444,6 +444,7 @@
         curl_setopt($curl, CURLOPT_HTTPHEADER,$header);
 
         $envatoRes = curl_exec($curl);
+ 
         curl_close($curl);
         $envatoRes = json_decode($envatoRes);
         
@@ -459,8 +460,7 @@
         curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query(array('envato_product_id' => $product_id,'envato_buyer_name' => $buyer_name,'envato_purchase_code' => $purchase_code,'envato_purchased_status' => $purchased_status,'buyer_admin_url' => $admin_url,'package_name' => $package_name,'ios_bundle_identifier' => $ios_bundle_identifier,'envato_buyer_email' => $envato_buyer_email)));
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $server_output = curl_exec($ch);
-        $server_output = "success";
+         $server_output = "success";
 
         curl_close ($ch);
 
